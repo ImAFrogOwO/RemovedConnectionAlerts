@@ -689,6 +689,7 @@ module.exports = (!global.ZeresPluginLibrary) ? NoZLibrary : () => {
             React.createElement('h4', null, serverName),
             React.createElement('h4', null, `Owner: ${ownerName}`),
             React.createElement('h4', null, `Removed at: ${removedDate}`),
+            React.createElement('h4', null, `Server ID: ${id}`)
         ),
         createLogEntryDeleteBtn(id, removedDate, false),
     );
@@ -715,6 +716,7 @@ module.exports = (!global.ZeresPluginLibrary) ? NoZLibrary : () => {
             },
             React.createElement('h4', null, globalName ? `${globalName} (@${friendName})` : friendName),
             React.createElement('h4', null, `Removed at: ${removedDate}`),
+            React.createElement('h4', null, `ID: ${id}`)
         ),
         createLogEntryDeleteBtn(id, removedDate, true),
     );
